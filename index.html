@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:azure;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(4, 59, 241); 
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .form-container {
+
+            background-color: #fffdf5;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 45px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"], 
+        input[type="number"], 
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc; 
+            border-radius: 8px;
+        }
+
+        .radio-group {
+            margin-top: 10px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #ffe760; 
+            border: 1px gray;
+            color: #0056a3;
+            padding: 12px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        img {
+            width: 150px;
+            height: 92px;
+            margin: 0px;
+        }
+
+        h1 {
+            margin: 1px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <img src="https://raw.githubusercontent.com/kevineroa08/web/main/sti logo.png" alt="logo ng sti">
+            <h1>STI College Lucena</h1>
+            <p>Enrollment form</p>
+        </header>
+
+        <div class="form-container">
+        <form action="#">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" required>
+
+            <label for="number">Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone number">Phone Number:</label>
+            <input type="text" name="phone number" id="phone number" required>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+            
+            <label>Choose Your Course:</label>
+
+            <div class="radio-group">
+                <center>
+                <label><input type="radio" name="course" id="BSBA">BSBA</label>
+                <label><input type="radio" name="course" id="BMMA">BMMA</label>
+                <label><input type="radio" name="course" id="BSIT">BSIT</label>
+                <label><input type="radio" name="course" id="BSCM">BSCM</label>
+                <label><input type="radio" name="course" id="BSCE">BSCE</label>
+                </center>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+
+        </div>
+    </body>
+</html>
